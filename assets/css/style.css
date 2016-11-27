@@ -1,0 +1,842 @@
+
+/*Browser defautl property reset code*/
+@charset "utf-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Force scrollbar */
+html { overflow-y: scroll; }
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em { font-style: italic; }
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup { top: -.7em; }
+
+sub { bottom: -.25em; }
+
+/* 1.2. Clear Fix
+   ========================================================================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after { clear: both; }
+
+.cf { *zoom: 1; }
+
+.futura-bold-font {
+  font-family: 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.font {
+  font-family: OpenSans;
+  color:  #ffffff;
+}
+
+.container { width: 100%; }
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height:auto;
+  margin-top: 20px; 
+  display: inline-block;  
+  background-color: #1181c8;
+}
+
+h1 {
+  width: 22%;
+  height:113px;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+h1 a {
+  width: 100%;
+  height: 113px;
+  display: inline-block;
+}
+
+h1 a img {
+  width: 100%;
+  height: 113px;
+  display: inline-block;
+}
+
+nav {
+  width: 80%;
+  margin: 16px 0; 
+  display: inline-block;
+  float: right;
+}
+
+header ul {
+  margin: 12px 0 12px 5%;
+  display: inline-block;
+}
+
+header ul li { display: inline-block; }
+
+header ul li:after {
+  height: 10px;
+  margin: 0 16px 0 18px;
+  display: inline-block;
+  content: "";
+  border: 1px solid #fff;
+}
+
+header ul li:last-child:after { border: none; }
+
+header ul li a {
+  display: inline-block;
+  font-size: 16.4px;
+  font-weight: 600;
+  line-height: 37.5px;
+  text-decoration: none;
+}
+
+.banner {
+  width: 100%;
+  height: 88vh;
+  display: inline-block;
+  background: url(../images/banner.jpg) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.request {
+  width: 25%;
+  height: 510px;
+  display: inline-block;
+  background-color: #1181c8;
+  position: absolute;
+  top: 28px;
+  right: 3%;
+  text-align: center;
+}
+
+.web {
+  width: 39%;
+  height: 15%;
+  margin: 40px 0 30px 0;
+  display: inline-block;
+}
+
+.web img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.request-quote {
+  display: block;
+  background-color: #031a28;
+  font-size: 25.94px;
+  font-weight: 600;
+}
+.banner form {
+  width: 83%;
+  display: inline-block;
+}
+
+.banner input {
+  width: 100%;
+  height: 38px;
+  padding: 0 10px; 
+  margin: 10px 0;
+  display: block;
+  font-size: 16.13px;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.banner textarea {
+  padding-left: 10px;
+  font-size: 16.13px;
+  font-weight: 400;
+  resize: none;
+}
+
+.banner .submit {
+  width: 62%;
+  height: 30px;
+  margin: 20px auto;
+  display: block;
+  background-color: #031a28;
+  text-align: center;
+  border:none;
+}
+.banner .submit:hover{
+  cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.about-service {
+  width: 95%;
+  border-top: 4px solid #bfbfbf;
+  margin: 20px auto;
+}
+
+.about-award {
+  width: 40%;
+  margin-top: 30px;
+  display: inline-block;
+  vertical-align: top;
+  border-right: 2px solid #bfbfbf;
+}
+
+.about-us,.awards {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-us p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  color:  #000;
+  text-align: left;
+}
+.awards { margin-top: 50px; }
+.award-text {
+  margin-top: 50px;
+  position: relative;
+}
+
+.award-text .arrow {
+  width: 35px;
+  height: 39px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translate( 0, -50%);
+}
+
+.award-text .lf { left: 0;  } 
+.award-text .rt { right: 0; }
+
+.award-text .arrow img { width: 100%; }
+
+.award-text-detail {
+  width: 74%;
+  display: inline-block;
+}
+.award-text .head {
+  display: block;
+  font-size: 33px;
+  font-weight: 700;
+  color: #000;
+}
+.award-text .text {
+  display: block;
+  font-size: 32px;
+  font-weight: 400;
+  color: #000;
+}
+.award-text .sub-text {
+  display: block;
+  font-size: 22px;
+  font-weight: 400;
+  color: #000;
+}
+.services {
+  width: 59%;
+  margin-top: 30px;
+  display: inline-block;
+  text-align: center;
+}
+
+.service {
+  width: 98%;
+  height: 172px;
+  margin: 20px 30px;
+  display: block;
+}
+
+.service-section {
+  width: 49%;
+  display: inline-block; 
+}
+
+.s1 { vertical-align: top; }
+
+.service-text {
+  width: 70%;
+  height: 169px;
+  padding: 10px 20px;
+  display: inline-block;
+  background-color: #404040;
+  box-sizing: border-box;
+  position: relative;
+}
+.service-sub-text {
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.know-more {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-decoration: none;
+}
+
+.service-img {
+  width: 28%;
+  height: 172px;
+  display: inline-block;
+  vertical-align: top;
+}
+.service-img img{ width: 100%; }
+
+.testimonials { 
+  width: 90%;
+  padding-top: 30px; 
+  margin: 0 auto;
+  border-top: 4px solid #bfbfbf;
+}
+
+.testimonial {
+  width: 18%;
+  padding: 10px;
+  margin: 2% 8% 0 0;
+  display: inline-block;
+  background-color: #404040;
+  box-sizing: border-box;
+}
+.testimonial:last-of-type { margin-right: 0; }
+
+.enquiry { 
+  width: 100%;
+  margin: 40px 0 60px 0; 
+  padding: 20px 0;
+  background-color:  #1181c8;  
+  box-sizing: border-box;
+}
+
+.enquiry-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.enquiry form {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
+.enquiry input {
+  width: 24%;
+  height: 38px;
+  padding: 0 10px; 
+  margin: 10px 0;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.enquiry div { 
+  width: 97%;
+  display: block;
+}
+.enquiry .submit {
+  width: 16%;
+  height: 30px;
+  margin-top: 10px;
+  display: inline-block;
+  float: right;
+  background-color: #031a28;
+  border:none;
+}
+.enquiry .submit:hover{
+  cursor: pointer;
+}
+
+.clients {
+  width: 100%;
+  display: block; 
+}
+
+.clients .wrapper {
+  padding-bottom: 30px;
+  border-bottom: 4px solid #bfbfbf;
+}
+
+.client {
+  width: 14%;
+  height: 150px;
+  margin-top: 40px; 
+  margin-right: 4%; 
+  display: inline-block;
+}
+
+.client:last-of-type { 
+  height: 150px;
+  margin: 0; 
+  vertical-align: bottom;
+
+}
+.client:first-of-type { 
+  height: 100px;
+  width: 100px;
+  margin-top: 0; 
+  vertical-align: middle;
+
+}
+
+.client img {
+  width: 100%;
+}
+
+.clients .arrow-key { 
+  display: inline-block;
+  float: right;
+}
+
+.clients .arrow-key a {
+  width: 25px;
+  height: 25px;
+  margin-right: 30px; 
+  display: inline-block;
+}
+
+.clients .arrow-key img { width: 100%;  }
+
+.contact-enquiry {
+  width: 100%;
+  margin-top: 50px; 
+  background-color: #031a28;
+}
+
+.contact {
+  width: 35%;
+  margin: 50px 40px 0 0; 
+  display: inline-block;
+}
+
+.contact span { display: block; }
+
+.tel,.mail{
+  margin: 20px 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.tel img,.mail img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px; 
+  display: inline-block;
+}
+
+.tel a,.mail a { text-decoration: none;  }
+
+.address-head {
+  margin: 30px 0 20px 0;
+  font-size: 18.25px;
+  font-weight: 600;
+}
+
+.inner-wrapper {
+  margin-left: 30px;
+}
+
+.social-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.social { margin: 30px 0 40px 0;  }
+
+.social-icon img {
+  width: 100%; 
+  display: block;
+}
+
+.address {
+  font-size: 18.25px;
+  font-weight: 400;
+}
+
+.enquiry-form {
+  width: 50%;
+  margin-top: 50px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.name,.email { 
+  width: 60%;
+  height: 30px;
+  margin: 0 10px 10px 0;
+  display: inline-block;
+  font-size: 12px;
+}
+.number,.country {  
+  width: 36%;
+  height: 30px;
+  display: inline-block;
+  font-size: 12px;
+}
+.enquiry-form .message { 
+  resize: none;
+  font-size: 12px;
+}
+
+.enquiry-form .send {  
+  width: 90%;
+  height: 25px;
+  margin-left: 5%;
+  display: inline-block;
+  background-color:  #1181c8;
+  border: none;
+  font-size: 18px;
+}
+
+fieldset {
+  padding: 15px;
+  border: 4px solid #fff;
+  position: relative;
+}
+
+.enqueiry-title {
+  padding: 10px 10px;
+  font-size: 35.4px;
+  font-weight: 400;
+}
+
+.enquiry-form span {
+  width: 23%;
+  height: 28px;
+  display: inline-block;
+  position: absolute;
+  bottom: -17px;
+  right: 17px;
+  background: #031a28;
+}
+
+.title {
+  padding: 10px 40px;
+  display: inline-block;
+  font-size: 35.4px;
+  font-weight: 400;
+  background-color:  #031a28;
+}
+
+.ham,.message-resp,.resp-menu { display: none; }
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+
+  .ham {
+    width: 40px;
+    height: 40px;
+    padding: 12px 0;
+    display: inline-block;
+    float: right;
+  }
+
+  nav ul,.request ,.enquiry-form .message { display: none; }
+
+  .banner { height: 50vh;  }
+  
+  .clients .wrapper { 
+    border: 0; 
+    padding: 0;
+  }
+  
+  .about-award,.services,.contact,.enquiry-form,.about-service,.testimonials,.clients {
+    width: 100%;
+    padding: 0;
+    display: block;
+    border: 0;
+  }
+
+  .client { margin-right: 2%; }
+  .service { margin: 20px 0px; }
+  .service-img img { height: 172px; }
+  .services { margin: 55px 0px 0 0; }
+  .service-text {  height: 172px; }
+  .testimonials div,.contact,.clients { text-align: center; }
+  .testimonial {
+    width: 23%;
+    padding: 10px;
+    margin: 2% 1% 0 0;
+  }
+  .address{ font-size: 27.25px; }
+
+  .number,.country,.name,.email { 
+    width: 48%; 
+    display: inline-block;
+  }
+
+  .country-message {
+    width: 98.3%!important; 
+    display: block!important;
+  }
+
+  .message-resp {
+    width: 100%; 
+    height: 30px;
+    display: block; 
+    font-size: 12px;
+  }
+
+  .contact-enquiry { padding-bottom: 50px;  }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 320px) {
+  
+  header { margin-top: 0; }
+  h1 { 
+    width: 34%; 
+    height: 70px;
+    top: 15px;
+    left: 6px;
+  }
+  
+  h1 a img {
+    height: 70px;
+  }
+
+  .ham { padding: 0; }  
+  
+  .ham {
+    width: 40px;
+    height: 40px;
+    padding: 12px 0;
+    display: inline-block;
+    float: right;
+  }
+
+  nav ul,.request ,.enquiry-form .message { display: none; }
+
+  .banner { height: 60vh;  }
+  
+  .resp-menu {
+    width: 60%;
+    height: auto;
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #000;
+    opacity: 0.9;
+    z-index: 5;
+  }
+
+  .resp-menu-div {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+  }
+
+  .resp-menu ul { 
+    width: 80%;
+    display: inline-block; 
+  }
+
+  .resp-menu ul li { 
+    width: 100%;
+    padding: 10px;
+    display: block; 
+    border-bottom: 1px solid #fff; 
+  }
+
+  .resp-menu ul li:last-of-type { border-bottom: 0; }
+  .resp-menu ul li:after {
+    height: 0;
+    margin: 0;
+    display: block;
+    border: 0;
+  }
+
+  .resp-menu ul li a {
+    display: inline-block;
+    font-size: 16.4px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-decoration: none;
+  }
+
+  .clients .wrapper { 
+    border: 0; 
+    padding: 0;
+  }
+  
+  .about-award,.services,.contact,.enquiry-form,.about-service,.testimonials,.clients {
+    width: 100%;
+    padding: 0;
+    display: block;
+    border: 0;
+  }
+
+  .client { margin-right: 2%; }
+  .service { margin: 20px 0px; }
+  .service-img img { height: 172px; }
+  .services { margin: 55px 0px 0 0; }
+  .service-text {  height: 172px; }
+  .testimonials div,.contact,.clients { text-align: center; }
+  .testimonial {
+    width: 23%;
+    padding: 10px;
+    margin: 2% 1% 0 0;
+  }
+  .address{ font-size: 27.25px; }
+
+  .number,.country,.name,.email { 
+    width: 100%;
+    margin: 10px 0; 
+    display: block;
+  }
+  .message-resp {
+    width: 100%; 
+    height: 30px;
+    display: block; 
+    font-size: 12px;
+  }
+
+  .contact span, .tel a, .mail a { font-size: 20px; }
+  .contact-enquiry { padding-bottom: 50px;  }
+
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 320px) and (orientation: portrait) {
+
+  .service-section,.service,.testimonial, .testimonial,.enquiry input {
+    width: 100%;
+    display: block;
+  }
+  .testimonials {
+    margin-top: 50px;
+  }
+  .enquiry .submit { width: 33%; }
+  .clients .wrapper div {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+  .clients { position: relative; }
+  .arrow-key .previous {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+  }
+  .arrow-key .next {
+    position: absolute;
+    top: 65%;
+    right: 4%;
+  }
+
+  .address{ font-size: 17.25px; }
+
+  .inner-wrapper { margin-left: 0;}
+
+  .title { font-size: 30px; }
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320px) {
+  header { margin-top: 0; }
+  h1 { 
+    width: 54%; 
+    height: 60px;
+    top: 29px;
+    left: 6px;
+  }
+  
+  h1 a img{height: auto;}
+
+  .ham { padding: 0; }
+}
+
+@media only screen and (max-width: 414px) and (min-width: 320px) and (orientation: portrait) {
+  header { margin-top: 0; }
+  h1 { 
+    width: 41%; 
+    height: 60px;
+    top: 6px;
+    left: 6px;
+  }
+  
+  h1 a img {
+    height: 60px;
+  }
+
+  .title { font-size: 20px; }
+  .address-head{ font-size: 16px!important; }
+}
